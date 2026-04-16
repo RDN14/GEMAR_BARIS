@@ -1,0 +1,59 @@
+name: deteksi_plak_gigi
+description: "A new Flutter project."
+publish_to: "none"
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.10.8
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  tflite_flutter: ^0.11.0
+  image: ^4.5.4
+  image_picker: ^1.2.1
+  image_gallery_saver_plus: ^4.0.1
+  path_provider: ^2.1.5
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+  uuid: ^4.5.2
+  pdf: ^3.11.3
+  printing: ^5.14.2
+  http: ^0.13.6
+  web_socket_channel: ^2.4.0
+  flutter_mjpeg: ^2.0.4
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  build_runner: ^2.4.13
+  hive_generator: ^2.0.1
+  flutter_launcher_icons: ^0.13.1
+  flutter_native_splash: ^2.4.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/
+    - assets/models/
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: assets/images/header_kop.png
+  remove_alpha_ios: true
+  adaptive_icon_background: "#FFFFFF"
+  adaptive_icon_foreground: assets/images/logo_kemenkes.png
+
+flutter_native_splash:
+  color: "#FFFFFF"
+  image: assets/images/logo_kemenkes.png
+  android: true
+  ios: true
+  android_12:
+    color: "#FFFFFF"
+    image: assets/images/logo_kemenkes.png
+
